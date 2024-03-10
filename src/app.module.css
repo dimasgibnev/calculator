@@ -1,56 +1,87 @@
-ul {
-    list-style: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap');
+
 .calculator {
+	position: relative;
+	top: 10vh;
 	margin: 0 auto;
-	padding: 25px;
-	width: 300px;
-
-	background-color: #eee;
-	text-align: center;
+	padding: 40px;
+	width: 350px;
+	height: 420px;
+	background-color: #030303;
+	border-radius: 10%;
 }
 
-.calculator__display {
-	background-color: #ddd;
-	width: 200px;
-    height: 100px;
-	margin-bottom: 20px;
-}
-
-.calculator__button-container {
-
-}
-
-.button-container__numbers {
-    width: 200px;
-	padding: 5px;
-}
-
-.button-container__symbols {
-    width: 80px;
-}
-
-.numbers-button {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	cursor: pointer;
-	margin-right: 5px;
-	margin-bottom: 5px;
-}
-
-.symbols-button{
-	width: 50px;
+.display {
+	border: 2px solid rgb(61, 61, 61);
+	background-color: #b7fa00;
 	height: 100px;
-	cursor: pointer;
-	margin-right: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 20px;
 }
 
-.symbols-button:last-child{
-	width: 100px;
+.button-container {
+	display: flex;
+	width: 100%;
+}
+
+.button-container__numbers,
+.button-container__symbols {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.button-container__numbers {
+	width: 80%;
+}
+.button-container__symbols {
+	width: 20%;
+}
+.button-numbers {
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 50%;
+	background-color: rgb(104, 104, 224);
+	color: #ffffff;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.button-numbers:last-child {
+	width: 88%;
+	height: 50px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0;
+}
+
+.button-symbols {
+	width: 70px;
 	height: 50px;
 	cursor: pointer;
-	margin-right: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	background-color: rgb(251, 103, 40);
+}
+
+.button-symbols:first-child {
+	background-color: rgb(121, 121, 121);
+}
+.button-symbols:last-child {
+	margin: 0;
+	background-color: rgb(65, 65, 227);
+}
+
+.result {
+	background-color: rgb(13, 255, 0);
 }
