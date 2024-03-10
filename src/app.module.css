@@ -46,7 +46,7 @@
 .button-numbers {
 	width: 50px;
 	height: 50px;
-	border: none;
+	border: 2px solid rgb(18, 18, 42);
 	border-radius: 50%;
 	background-color: rgb(104, 104, 224);
 	color: #ffffff;
@@ -68,17 +68,19 @@
 	height: 50px;
 	cursor: pointer;
 	margin-bottom: 10px;
-	border: none;
+	border: 2px solid rgb(74, 31, 12);
 	border-radius: 5px;
 	color: #ffffff;
 	background-color: rgb(251, 103, 40);
 }
 
 .button-symbols:first-child {
+	border: 2px solid rgb(35, 35, 35);
 	background-color: rgb(121, 121, 121);
 }
 .button-symbols:last-child {
 	margin: 0;
+	border: 2px solid rgb(17, 17, 56);
 	background-color: rgb(65, 65, 227);
 }
 
