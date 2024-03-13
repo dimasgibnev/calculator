@@ -21,7 +21,9 @@ export const App = () => {
 			if (operand2 === '0') {
 				setOperand2((prev) => target.textContent);
 			} else {
-				setOperand2((prev) => prev + target.textContent);
+				if (operand2.length < 9) {
+					setOperand2((prev) => prev + target.textContent);
+				}
 			}
 		} else if (operator === '=') {
 			if (operand1 === '0') {
@@ -34,7 +36,10 @@ export const App = () => {
 		} else if (operand1 === '0') {
 			setOperand1((prev) => target.textContent);
 		} else {
-			setOperand1((prev) => prev + target.textContent);
+			if (operand1.length < 9) {
+				setOperand1((prev) => prev + target.textContent);
+			}
+			
 		}
 	}
 
