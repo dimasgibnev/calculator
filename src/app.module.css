@@ -12,17 +12,19 @@
 }
 
 .display {
-	border: 2px solid rgb(61, 61, 61);
-	background-color: #b7fa00;
-	height: 100px;
-	margin-bottom: 20px;
-	padding: 5px;
-	font-family: 'Orbitron', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	overflow: hidden;
+	border: 2px solid rgb(61, 61, 61);
+	background-color: #b7fa00;
+	height: 110px;
+	margin-bottom: 20px;
+	padding: 4px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+
 }
 
 .button-container {
@@ -52,6 +54,7 @@
 	cursor: pointer;
 	margin-right: 20px;
 	margin-bottom: 10px;
+	transition: 0.3s;
 }
 
 .button-numbers:last-child {
@@ -71,6 +74,7 @@
 	border-radius: 5px;
 	color: #ffffff;
 	background-color: rgb(251, 103, 40);
+	transition: 0.3s;
 }
 
 .button-symbols:first-child {
@@ -82,7 +86,9 @@
 	border: 2px solid rgb(17, 17, 56);
 	background-color: rgb(65, 65, 227);
 }
-
+.button-numbers:active,.button-symbols:active {
+transform: scale(1.02);
+}
 .result {
 	background-color: rgb(13, 255, 0);
 }
